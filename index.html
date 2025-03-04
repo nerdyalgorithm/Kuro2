@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuro Amachree | Fashion Stylist</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- ABOUT SECTION (LANDING PAGE) -->
+    <section class="about">
+        <h1>KURO AMACHREE</h1>
+        <p>Nigerian-born stylist, curator, and art director.</p>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <button id="close-btn">✕</button>
+        <button id="prev-btn">❮</button>
+        <img id="lightbox-img" src="" alt="Full Image">
+        <button id="next-btn">❯</button>
+    </div>
+
+    <!-- WORK SECTION -->
+    <section id="work">
+        <div class="tabs">
+            <button class="tab-btn active" data-target="personal-projects">Personal Projects</button>
+            <button class="tab-btn" data-target="styling-inspo">Styling Inspo</button>
+        </div>
+
+        <!-- PERSONAL PROJECTS -->
+        <div id="personal-projects" class="work-content active">
+            <h2>Personal Projects</h2>
+            <div class="gallery" id="formal-rage-gallery">
+                <a href="formal-rage.html">
+                    <img src="images/personal_projects/formal_rage/work1.jfif" alt="Formal Rage Thumbnail">
+                </a>
+            </div>
+        </div>
+
+        <!-- STYLING INSPO -->
+        <div id="styling-inspo" class="work-content">
+            <h2>Styling Inspiration</h2>
+            <div class="masonry-gallery" id="styling-inspo-gallery"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>For collaborations, reach out at: <a href="mailto:kuroamachree@gmail.com">kuroamachree@gmail.com</a></p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/kuroamachree" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="instagram-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
