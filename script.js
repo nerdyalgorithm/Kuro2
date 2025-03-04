@@ -18,7 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // LOAD STYLING INSPO IMAGES (index.html only)
     const stylingInspoGallery = document.getElementById("styling-inspo-gallery");
     if (stylingInspoGallery) {
-        const stylingImages = ["inspo1.jfif", "inspo2.jfif"];
+        const totalInspoImages = 31; // Total number of inspo images
+        let stylingImages = [];
+
+        // Dynamically generate image paths
+        for (let i = 1; i <= totalInspoImages; i++) {
+            stylingImages.push(`inspo${i}.jfif`);
+        }
+
+        // Load images into the gallery
         stylingImages.forEach((image, index) => {
             let img = document.createElement("img");
             img.src = `images/styling_inspo/${image}`;
