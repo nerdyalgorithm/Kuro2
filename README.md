@@ -1,1 +1,1 @@
-#
+#kuro amachree styling page
